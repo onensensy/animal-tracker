@@ -11,6 +11,6 @@
     'send' => 'Send',
     'start-at' => 'Start',
     'user' => 'User',
-    'vehicle' => 'Vehicle',
+    'vehicle' => 'Animal',
     'workshop' => 'Workshop',
 ];

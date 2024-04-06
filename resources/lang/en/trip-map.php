@@ -13,5 +13,5 @@
     'start_end' => 'Route',
     'state' => 'State',
     'user' => 'User',
-    'vehicle' => 'Vehicle',
+    'vehicle' => 'Animal',
 ];

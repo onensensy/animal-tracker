@@ -1,6 +1,6 @@
 <?php return [
     'device' => [
-        'text-peding' => 'The device will be associated with a vehicle',
+        'text-peding' => 'The device will be associated with an Animal',
         'title' => 'Create a Device',
     ],
     'server' => [
@@ -14,7 +14,7 @@
         'title' => 'Waiting for Trips',
     ],
     'vehicle' => [
-        'text-peding' => 'The vehicle will be able to have one or several devices',
-        'title' => 'Create a Vehicle',
+        'text-peding' => 'The Animal will be able to have one or several devices',
+        'title' => 'Create an Animal',
     ],
 ];

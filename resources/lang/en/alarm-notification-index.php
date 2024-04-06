@@ -10,5 +10,5 @@
     'telegram' => 'Telegram',
     'trip' => 'Trip',
     'user' => 'User',
-    'vehicle' => 'Vehicle',
+    'vehicle' => 'Animal',
 ];

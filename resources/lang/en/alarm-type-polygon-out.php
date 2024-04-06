@@ -1,4 +1,4 @@
 <?php return [
-    'message' => 'The vehicle has left area',
+    'message' => 'The Animal has left area',
     'title' => 'Area (Exit)',
 ];

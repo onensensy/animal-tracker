@@ -14,7 +14,7 @@ class Route extends RouteServiceProvider
     {
         $this->patterns();
 
-        parent::boot();
+        // parent::boot();
     }
 
     /**

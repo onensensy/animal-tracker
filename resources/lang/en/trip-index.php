@@ -14,7 +14,7 @@
     'longitude' => 'Longitude',
     'map' => 'Show Map',
     'messages' => 'Messages',
-    'meta-title' => 'Trips',
+    'meta-title' => 'Movements',
     'name' => 'Name',
     'radius' => 'Radio',
     'search' => 'Search',
@@ -33,5 +33,5 @@
     'state' => 'State',
     'time' => 'Duration',
     'user' => 'User',
-    'vehicle' => 'Vehicle',
+    'vehicle' => 'Animal',
 ];

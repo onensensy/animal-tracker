@@ -10,5 +10,5 @@
     'shared' => 'Shared',
     'shared_public' => 'Shared Public',
     'user' => 'User',
-    'vehicle' => 'Vehicle',
+    'vehicle' => 'Animal',
 ];

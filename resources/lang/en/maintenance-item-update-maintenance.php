@@ -10,6 +10,6 @@
     'tax_amount' => 'VAT',
     'tax_percent' => 'VAT % VAT',
     'total' => 'Total',
-    'vehicle' => 'Vehicle',
+    'vehicle' => 'Animal',
     'workshop' => 'Workshop',
 ];

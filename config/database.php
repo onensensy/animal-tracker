@@ -38,7 +38,7 @@ return [
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
+            'username' => env('DB_USERNAME', 'sensy'),
             'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
@@ -49,9 +49,9 @@ return [
             'engine' => null,
             'timezone' => '+00:00',
             'options' => [],
-            'log' => (bool)env('DB_LOG', false),
-            'log_backtrace' => (bool)env('DB_LOG_BACKTRACE', true),
-            'log_time' => (bool)env('DB_LOG_TIME', true),
+            'log' => (bool) env('DB_LOG', false),
+            'log_backtrace' => (bool) env('DB_LOG_BACKTRACE', true),
+            'log_time' => (bool) env('DB_LOG_TIME', true),
         ],
 
         'test' => [

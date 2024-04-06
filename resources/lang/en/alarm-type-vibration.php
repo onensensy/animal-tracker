@@ -1,4 +1,4 @@
 <?php return [
-    'message' => 'Vehicle vibration detected',
+    'message' => 'Animal vibration detected',
     'title' => 'Vibration',
 ];

@@ -3,7 +3,7 @@
     'distance' => 'Distance since previous refueling',
     'distance_total' => 'Total distance',
     'error' => [
-        'vehicle-exists' => 'The selected vehicle is no longer available',
+        'vehicle-exists' => 'The selected Animal is no longer available',
     ],
     'meta-title' => 'Refuelings > Create',
     'price' => 'Price',
@@ -13,5 +13,5 @@
     'success' => 'Refueling has been successfully registered',
     'total' => 'Total Amount',
     'user' => 'User',
-    'vehicle' => 'Vehicle',
+    'vehicle' => 'Animal',
 ];

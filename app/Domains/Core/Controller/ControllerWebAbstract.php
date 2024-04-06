@@ -69,7 +69,7 @@ abstract class ControllerWebAbstract extends ControllerAbstract
      */
     protected function page(string $page, array $data = [], ?int $status = null): Response
     {
-        return response()->view('domains.'.$page, $data, ResponseService::status($status));
+        return response()->view('domains.' . $page, $data, ResponseService::status($status));
     }
 
     /**

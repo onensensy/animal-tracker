@@ -5,5 +5,5 @@
     'start_at' => 'Start',
     'time' => 'Time',
     'user' => 'User',
-    'vehicle' => 'Vehicle',
+    'vehicle' => 'Animal',
 ];

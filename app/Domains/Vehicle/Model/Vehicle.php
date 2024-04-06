@@ -27,12 +27,12 @@ class Vehicle extends ModelAbstract
     /**
      * @var string
      */
-    protected $table = 'vehicle';
+    protected $table = 'animals';
 
     /**
      * @const string
      */
-    public const TABLE = 'vehicle';
+    public const TABLE = 'animals';
 
     /**
      * @const string
@@ -113,7 +113,7 @@ class Vehicle extends ModelAbstract
     public function positionLast(): HasOne
     {
         return $this->hasOne(PositionModel::class, static::FOREIGN)
-            ->ofMany(['date_utc_at' => 'MAX'], fn ($q) => $q->withoutGlobalScope('selectPointAsLatitudeLongitude'))
+            ->ofMany(['date_utc_at' => 'MAX'], fn($q) => $q->withoutGlobalScope('selectPointAsLatitudeLongitude'))
             ->selectOnlyLatitudeLongitude();
     }
 
