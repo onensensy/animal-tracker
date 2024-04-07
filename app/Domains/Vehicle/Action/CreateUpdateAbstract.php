@@ -77,4 +77,17 @@ abstract class CreateUpdateAbstract extends ActionAbstract
             ->byId($this->data['timezone_id'])
             ->exists();
     }
+
+    /**
+     * Others
+     * @return void
+     */
+    protected function others(): void
+    {
+        //    'species' => $this->data['species'],
+        //     'age' => $this->data['age'],
+        //     'gender' => $this->data['gender'],
+        //     'habitat' => $this->data['habitat'],
+        //     'weight' => $this->data['weight'],
+    }
 }

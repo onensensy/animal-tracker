@@ -27,12 +27,12 @@ class Vehicle extends ModelAbstract
     /**
      * @var string
      */
-    protected $table = 'animals';
+    protected $table = 'animal';
 
     /**
      * @const string
      */
-    public const TABLE = 'animals';
+    public const TABLE = 'animal';
 
     /**
      * @const string
