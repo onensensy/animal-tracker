@@ -33,6 +33,8 @@ class Route extends RouteServiceProvider
      */
     public function map(): void
     {
+        $this->loadRoutesFrom(base_path('routes/web.php'));
+
         foreach (glob(app_path('Domains/*/Controller*/router.php')) as $file) {
             require $file;
         }
