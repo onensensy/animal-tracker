@@ -23,9 +23,10 @@
                     <th class="text-left">Message</th>
                     <th>From</th>
                     <th>Sms status</th>
-                    <th>Sms sid</th>
-                    <th>Sms message sid</th>
+{{--                    <th>Sms sid</th>--}}
+{{--                    <th>Sms message sid</th>--}}
                     <th>Message sid</th>
+                    <th>Read</th>
                 </tr>
                 </thead>
 
@@ -35,9 +36,12 @@
                         <td class="text-left">{{ $notification->body }}</td>
                         <td>{{ $notification->from }}</td>
                         <td>{{ $notification->sms_status }}</td>
-                        <td>{{ $notification->sms_sid }}</td>
-                        <td>{{ $notification->sms_message_sid }}</td>
+{{--                        <td>{{ $notification->sms_sid }}</td>--}}
+{{--                        <td>{{ $notification->sms_message_sid }}</td>--}}
                         <td>{{ $notification->message_sid }}</td>
+                        <td>
+                            True
+                        </td>
                     </tr>
 
                 @endforeach
