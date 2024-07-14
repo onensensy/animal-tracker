@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
+use Twilio\TwiML\MessagingResponse;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +16,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('webhook-listener', function () {
-    $request = request();
-//    Log::info('GOT THE MESSAGE VIA POST: ' . $request->getContent());
-    Log::info('GOT THE MESSAGE VIA POST: ');
+    $req = request();
 
-    return response('Webhook listener', 200);
+    $smsStatus = $req->SmsStatus;
+    $smsSid = $req->SmsSid;
+    $smsMessageSid = $req->SmsMessageSid;
+    $messageSid = $req->MessageSid;
+    $from = $req->From;
+    $body = $req->Body;
+
+    Log::info('----');
+    Log::info('NEW VIA GET: ' . $body);
+    Log::info('----');
+
+    $response = new MessagingResponse();
+    return $response->message("All Good");
+
 })->name('me');
