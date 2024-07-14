@@ -1,5 +1,5 @@
-<div>
-    <button href="{{route('notifications')}}">
+<div >
+    <a href="{{route('notifications')}}">
         @icon('bell')
-    </button>
+    </a>
 </div>
