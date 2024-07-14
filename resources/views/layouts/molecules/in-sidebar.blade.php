@@ -1,7 +1,9 @@
 <nav class="side-nav">
     <ul>
         <li>
-            <livewire:notifications.notification-icon />
+            <a href="{{route('notifications')}}">
+                @icon('bell')
+            </a>
 
             <a href="{{ route('dashboard.index') }}" class="logo {{ str_starts_with($ROUTE, 'dashboard.') ? 'active' : '' }}">
                 @svg('/build/images/logo.svg')

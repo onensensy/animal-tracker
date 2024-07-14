@@ -82,5 +82,7 @@ Route::get('webhook-listener', function () {
 })->name('webhook-listener');
 
 Route::get('/notifications', function (){
-    return view('notifications')->with(['ROUTE'=>'notifications','AUTH'=>Auth::user()]);
+    $list = Message::all();
+
+    return view('notifications')->with(['ROUTE'=>'notifications','AUTH'=>Auth::user(),'list'=>$list]);
 })->name('notifications');
