@@ -14,9 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('webhook-listener', function () {
+Route::post('webhook-listener', function () {
     $request = request();
-    Log::info($request->all());
+//    Log::info('GOT THE MESSAGE VIA POST: ' . $request->getContent());
+    Log::info('GOT THE MESSAGE VIA POST: ');
 
     return response('Webhook listener', 200);
 })->name('me');
