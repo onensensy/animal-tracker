@@ -72,6 +72,7 @@ class Create extends ActionAbstract
         $this->row = Model::query()->create([
             'message' => $this->data['message'],
             'device_id' => $this->data['device_id'],
+            'sent_at' =>now()
         ]);
     }
 }

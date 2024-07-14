@@ -2,6 +2,7 @@
 
 namespace App\Domains\Device\Controller;
 
+use App\Services\MessagingService;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
 use App\Domains\Device\Service\Controller\Create as ControllerService;
@@ -35,7 +36,14 @@ class Create extends ControllerAbstract
      */
     protected function create(): RedirectResponse
     {
+        #send message to bind device
+        $sender = new MessagingService();
+        $sender->sendSMS('000');
+
         $this->row = $this->action()->create();
+
+
+
 
         $this->sessionMessage('success', __('device-create.success'));
 
